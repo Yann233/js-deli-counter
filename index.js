@@ -1,15 +1,15 @@
-function takeANumber(currentLine, newPersonName){
+ /*function takeANumber(currentLine, newPersonName){
     currentLine.push(newPersonName);
 return ('Welcome, ' + newPersonName + '. You are number ' + currentLine.length + ' in line.')
 //return  `Welcome, ${newPersonName}. You are number ${currentLine.length} in line.`;
-}
+}*/
 
-/*function takeANumber(katzDeli, newCustomer) {
-if (katzDeli.length > 0);
+function takeANumber(katzDeli, newCustomer) {
+if (katzDeli.length > 0);//not necessary
   katzDeli.push(newCustomer);
 //return ('Welcome, ' + newCustomer + '. You are number ' + katzDeli.length + ' in line.')
 return  `Welcome, ${newCustomer}. You are number ${katzDeli.length} in line.`;
-}*/
+}
 
 function nowServing(katzDeliLine){
 if (katzDeliLine.length > 0){
@@ -28,3 +28,13 @@ function currentLine(katzDeliLine) {
  }
  return "The line is currently: " + printArray.join(", ");
 }
+
+var a=0;
+function ticket(){
+a++;
+  return "welcome, you are #"+ a;
+}
+
+ticket();
+ticket();
+ticket();
